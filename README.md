@@ -1,13 +1,13 @@
 # GenAI-FoodRecommendationSystem
 Food recommendation system using ChromaDB and HuggingFace model. 
 
-# 🍽️ Food Recommendation System using ChromaDB & HuggingFace
+# Food Recommendation System using ChromaDB & HuggingFace
 
 This Node.js project uses [ChromaDB](https://docs.trychroma.com/) for vector storage and [Hugging Face](https://huggingface.co/) models for text embeddings and zero-shot classification to build a **smart food recommendation system**.
 
 ---
 
-## 🚀 Features
+## Features
 
 - Uses **sentence-transformers/all-MiniLM-L6-v2** to generate text embeddings.
 - Uses **zero-shot classification** to extract dietary and cuisine preferences from queries.
@@ -17,7 +17,7 @@ This Node.js project uses [ChromaDB](https://docs.trychroma.com/) for vector sto
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -28,7 +28,7 @@ This Node.js project uses [ChromaDB](https://docs.trychroma.com/) for vector sto
 
 ---
 
-## 🔧 Installation
+## Installation
 
 1. **Clone this repository**:
 
@@ -47,7 +47,7 @@ npm install chromadb @huggingface/inference
 
 ---
 
-## 📥 Download Dataset (Optional)
+## Download Dataset (Optional)
 
 If you don’t already have `FoodDataSet.js`, download it:
 
@@ -57,7 +57,7 @@ wget https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/CBCVVX4w
 
 ---
 
-## 🔐 Hugging Face Token
+## Hugging Face Token
 
 Generate a free token from [Hugging Face](https://huggingface.co/settings/tokens) and replace this line in `index.js`:
 
@@ -67,7 +67,7 @@ const hf = new HfInference("your_hf_token_here");
 
 ---
 
-## ▶️ Running the App
+## Running the App
 
 ```bash
 node index.js
@@ -75,7 +75,7 @@ node index.js
 
 ---
 
-## 🧠 Example Query
+## Example Query
 
 ```js
 const query = "I want to eat food with chicken and masala";
@@ -87,7 +87,7 @@ This query will:
 
 ---
 
-## 📝 Output Example
+## Output Example
 
 ```
 Extracted Filter Criteria (Diet): { diet: 'non-vegetarian', cuisine: null }
@@ -98,7 +98,7 @@ Top 2 Recommended Food Name: Butter Chicken Curry
 
 ---
 
-## 📌 Notes
+## Notes
 
 - The app requires **Node.js v16+**.
 - The code uses **CommonJS** modules.
@@ -106,6 +106,6 @@ Top 2 Recommended Food Name: Butter Chicken Curry
 
 ---
 
-## 🤝 License
+## License
 
 MIT License. Feel free to fork and build on top of it!
